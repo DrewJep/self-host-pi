@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import drewImage from '../assets/drew.jpg';
 // Main personal homepage for Drew Jepsen
 ---
 
@@ -18,14 +19,17 @@ import Layout from '../layouts/Layout.astro';
         <section class="mb-8">
           <h2 class="text-2xl font-semibold mb-2 text-blue-700">Education</h2>
           <p class="text-lg text-gray-700 mb-2">
-            B.S. in Computer Science, Example University
+            B.S. in Computer Science, University of Vermont, 2024
+          </p>
+          <p class="text-lg text-gray-700 mb-2">
+            M.S. in Computer Science, University of Vermont, 2025
           </p>
           <a href="/education" class="text-blue-600 hover:underline">See details</a>
         </section>
         <section class="mb-8">
           <h2 class="text-2xl font-semibold mb-2 text-blue-700">Work</h2>
           <p class="text-lg text-gray-700 mb-2">
-            Software Engineer at Example Company
+            Full Stack Developer at Campus Storage Solutions
           </p>
           <a href="/work" class="text-blue-600 hover:underline">See my experience</a>
         </section>
@@ -36,9 +40,19 @@ import Layout from '../layouts/Layout.astro';
           </p>
           <a href="/projects" class="text-blue-600 hover:underline">View projects</a>
         </section>
+        <section class="mb-8">
+          <h2 class="text-2xl font-semibold mb-2 text-blue-700">Connect</h2>
+          <p class="text-lg text-gray-700 mb-2">
+            Let's connect! Feel free to reach out on LinkedIn or check out my projects on GitHub.
+          </p>
+          <div class="flex space-x-4">
+            <a href="https://www.linkedin.com/in/cdrewjep" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Connect on LinkedIn</a>
+            <a href="https://github.com/DrewJep" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">View on GitHub</a>
+          </div>
+        </section>
       </div>
       <div class="mt-8 md:mt-0 md:ml-8 flex-shrink-0 flex justify-center items-center w-full md:w-64">
-        <img src="/src/assets/drew.jpg" alt="Drew Jepsen" class="rounded-lg shadow-lg w-full max-w-xs h-auto object-cover" />
+        <img src={drewImage.src} alt="Drew Jepsen" class="rounded-lg shadow-lg w-full max-w-xs h-auto object-cover" />
       </div>
     </div>
   </div>
