@@ -1,11 +1,45 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+// Main personal homepage for Drew Jepsen
 ---
 
 <Layout>
-	<Welcome />
+  <div class="min-h-screen flex flex-col items-center justify-start bg-white p-8">
+    <div class="w-full flex flex-col md:flex-row items-start justify-between max-w-4xl">
+      <div class="flex-1">
+        <h1 class="text-5xl font-bold mb-4 text-blue-900">Drew Jepsen</h1>
+        <section class="mb-8">
+          <h2 class="text-2xl font-semibold mb-2 text-blue-700">About Me</h2>
+          <p class="text-lg text-gray-700 mb-2">
+            Hi! I'm Drew Jepsen. Welcome to my personal site. Here you'll find a quick overview of my background, education, work, and projects. Click any section to learn more!
+          </p>
+          <a href="/about" class="text-blue-600 hover:underline">Read more</a>
+        </section>
+        <section class="mb-8">
+          <h2 class="text-2xl font-semibold mb-2 text-blue-700">Education</h2>
+          <p class="text-lg text-gray-700 mb-2">
+            B.S. in Computer Science, Example University
+          </p>
+          <a href="/education" class="text-blue-600 hover:underline">See details</a>
+        </section>
+        <section class="mb-8">
+          <h2 class="text-2xl font-semibold mb-2 text-blue-700">Work</h2>
+          <p class="text-lg text-gray-700 mb-2">
+            Software Engineer at Example Company
+          </p>
+          <a href="/work" class="text-blue-600 hover:underline">See my experience</a>
+        </section>
+        <section class="mb-8">
+          <h2 class="text-2xl font-semibold mb-2 text-blue-700">Projects</h2>
+          <p class="text-lg text-gray-700 mb-2">
+            Check out some of my favorite projects and open source work.
+          </p>
+          <a href="/projects" class="text-blue-600 hover:underline">View projects</a>
+        </section>
+      </div>
+      <div class="mt-8 md:mt-0 md:ml-8 flex-shrink-0 flex justify-center items-center w-full md:w-64">
+        <img src="/src/assets/drew.jpg" alt="Drew Jepsen" class="rounded-lg shadow-lg w-full max-w-xs h-auto object-cover" />
+      </div>
+    </div>
+  </div>
 </Layout>
