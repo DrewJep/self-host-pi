@@ -1,13 +1,27 @@
 ---
+import TwitterLayout from '../layouts/TwitterLayout.astro';
+import Post from '../components/Post.astro';
 // Work page for Drew Jepsen
 ---
 
-<div class="max-w-3xl mx-auto py-12 px-4">
-  <h1 class="text-4xl font-bold mb-6">Work</h1>
-  <p class="text-lg text-gray-700 mb-4">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, urna eu tincidunt consectetur, nisi nisl aliquam nunc, eget aliquam massa nisl quis neque. Suspendisse potenti. Etiam euismod, urna eu tincidunt consectetur, nisi nisl aliquam nunc, eget aliquam massa nisl quis neque.
-  </p>
-  <p class="text-lg text-gray-700 mb-4">
-    Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate. Etiam elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien.
-  </p>
-</div> 
+<TwitterLayout title="Work Experience" description="My professional journey and career highlights">
+  <Post 
+    content="Full Stack Developer at Campus Storage Solutions (2024-Present) - Building and maintaining web applications that help students with their storage needs. Working with modern technologies including React, Node.js, and cloud services."
+    date="2024-Present"
+  />
+  
+  <Post 
+    content="Key responsibilities: Frontend development with React, backend API development, database design, cloud deployment, and collaborating with cross-functional teams to deliver high-quality software solutions."
+    date="2024-Present"
+  />
+  
+  <Post 
+    content="Technologies I work with: JavaScript/TypeScript, React, Node.js, Python, SQL, AWS, Docker, and various modern web development tools and frameworks."
+    date="2024-Present"
+  />
+  
+  <Post 
+    content="Achievements: Successfully launched multiple features, improved application performance, and mentored junior developers. Passionate about writing clean, maintainable code and staying up-to-date with industry best practices."
+    date="2024-Present"
+  />
+</TwitterLayout> 

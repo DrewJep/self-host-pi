@@ -1,13 +1,37 @@
 ---
+import TwitterLayout from '../layouts/TwitterLayout.astro';
+import Post from '../components/Post.astro';
 // Projects page for Drew Jepsen
 ---
 
-<div class="max-w-3xl mx-auto py-12 px-4">
-  <h1 class="text-4xl font-bold mb-6">Projects</h1>
-  <p class="text-lg text-gray-700 mb-4">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, urna eu tincidunt consectetur, nisi nisl aliquam nunc, eget aliquam massa nisl quis neque. Suspendisse potenti. Etiam euismod, urna eu tincidunt consectetur, nisi nisl aliquam nunc, eget aliquam massa nisl quis neque.
-  </p>
-  <p class="text-lg text-gray-700 mb-4">
-    Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate. Etiam elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien.
-  </p>
-</div> 
+<TwitterLayout title="Projects" description="My favorite projects and open source work">
+  <Post 
+    content="Minesweeper (Spring 2021) - Final project for CS211. Built a complete Minesweeper game in Java with GUI, implementing game logic, user interface, and file I/O. Features include custom difficulty levels and game state persistence."
+    date="Spring 2021"
+  />
+  
+  <Post 
+    content="Evolutionary Robotics Homework (CS5060) - Developed evolutionary algorithms for robot control and behavior optimization. Used Jupyter Notebooks for data analysis and visualization of robot performance across generations."
+    date="2024"
+  />
+  
+  <Post 
+    content="Hackathon 2024 - Participated in a competitive hackathon, building a web application under time constraints. Gained experience in rapid prototyping, team collaboration, and presenting technical solutions."
+    date="2024"
+  />
+  
+  <Post 
+    content="Self-Hosted Raspberry Pi Website (Current) - This website! Learning how to self-host on a Raspberry Pi 4, including nginx configuration, SSL certificates, and deployment automation. Built with Astro and Tailwind CSS."
+    date="2025"
+  />
+  
+  <Post 
+    content="CS211 Final Project - Advanced data analysis and visualization project using Jupyter Notebooks. Implemented statistical analysis, machine learning algorithms, and interactive data visualizations."
+    date="2021"
+  />
+  
+  <Post 
+    content="Check out more of my projects on GitHub: https://github.com/DrewJep - I'm always working on new things and love collaborating on open source projects!"
+    date="Ongoing"
+  />
+</TwitterLayout> 

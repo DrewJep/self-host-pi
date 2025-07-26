@@ -1,13 +1,35 @@
 ---
+import TwitterLayout from '../layouts/TwitterLayout.astro';
+import Post from '../components/Post.astro';
+import drewImage from '../assets/drew.jpg';
 // About Me page for Drew Jepsen
 ---
 
-<div class="max-w-3xl mx-auto py-12 px-4">
-  <h1 class="text-4xl font-bold mb-6">About Me</h1>
-  <p class="text-lg text-gray-700 mb-4">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, urna eu tincidunt consectetur, nisi nisl aliquam nunc, eget aliquam massa nisl quis neque. Suspendisse potenti. Etiam euismod, urna eu tincidunt consectetur, nisi nisl aliquam nunc, eget aliquam massa nisl quis neque.
-  </p>
-  <p class="text-lg text-gray-700 mb-4">
-    Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate. Etiam elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien.
-  </p>
-</div> 
+<TwitterLayout title="About Me" description="Get to know Drew Jepsen">
+  <Post 
+    content="While my legal first name is Christopher, I go by Drew. While I choose to believe it is because I think it's cool, in actuality it is because I am the 4th Christopher in my family and that just gets confusing."
+    image={drewImage.src}
+    imageAlt="Drew Jepsen"
+    date="2025"
+  />
+  
+  <Post 
+    content="I am currently living with 3 dogs, Gracey, Finley and Tuna. Here is their Instagram: https://www.instagram.com/finn.and.tuna/"
+    date="2025"
+  />
+  
+  <Post 
+    content="I have been programming since I was 17 years old. But I have had a fascination with computers since I was a kid."
+    date="2025"
+  />
+  
+  <Post 
+    content="Currently working as a Full Stack Developer at Campus Storage Solutions, where I get to build and maintain web applications that help students with their storage needs."
+    date="2025"
+  />
+  
+  <Post 
+    content="When I'm not coding, you can find me hiking with my dogs, working on personal projects like this self-hosted website, or exploring new technologies."
+    date="2025"
+  />
+</TwitterLayout> 

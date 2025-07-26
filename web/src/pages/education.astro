@@ -1,13 +1,27 @@
 ---
+import TwitterLayout from '../layouts/TwitterLayout.astro';
+import Post from '../components/Post.astro';
 // Education page for Drew Jepsen
 ---
 
-<div class="max-w-3xl mx-auto py-12 px-4">
-  <h1 class="text-4xl font-bold mb-6">Education</h1>
-  <p class="text-lg text-gray-700 mb-4">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, urna eu tincidunt consectetur, nisi nisl aliquam nunc, eget aliquam massa nisl quis neque. Suspendisse potenti. Etiam euismod, urna eu tincidunt consectetur, nisi nisl aliquam nunc, eget aliquam massa nisl quis neque.
-  </p>
-  <p class="text-lg text-gray-700 mb-4">
-    Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate. Etiam elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien.
-  </p>
-</div> 
+<TwitterLayout title="Education" description="My academic journey and achievements">
+  <Post 
+    content="B.S. in Computer Science from University of Vermont (2024) - Graduated with honors and completed a comprehensive curriculum covering algorithms, data structures, software engineering, and computer systems."
+    date="2024"
+  />
+  
+  <Post 
+    content="M.S. in Computer Science from University of Vermont (2025) - Currently pursuing advanced studies in computer science with focus on emerging technologies and research."
+    date="2025"
+  />
+  
+  <Post 
+    content="Key coursework included: Advanced Algorithms, Machine Learning, Database Systems, Software Engineering, Computer Networks, and Operating Systems."
+    date="2024-2025"
+  />
+  
+  <Post 
+    content="Academic achievements: Dean's List, Computer Science Department Honors, and completed several research projects in evolutionary robotics and AI."
+    date="2024-2025"
+  />
+</TwitterLayout> 
