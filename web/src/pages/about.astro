@@ -2,6 +2,9 @@
 import TwitterLayout from '../layouts/TwitterLayout.astro';
 import Post from '../components/Post.astro';
 import drewImage from '../assets/drew.jpg';
+import graceyImage from '../assets/gracey.JPG';
+import finleyImage from '../assets/finley.jpg';
+import skiingImage from '../assets/skiing.jpg';
 // About Me page for Drew Jepsen
 ---
 
@@ -15,6 +18,15 @@ import drewImage from '../assets/drew.jpg';
   
   <Post 
     content="I am currently living with 3 dogs, Gracey, Finley and Tuna. Here is their Instagram: https://www.instagram.com/finn.and.tuna/"
+    image={graceyImage.src}
+    imageAlt="Gracey"
+    date="2025"
+  />
+  
+  <Post 
+    content="Meet Finley, one of my three amazing dogs who keep me company while I work on projects."
+    image={finleyImage.src}
+    imageAlt="Finley"
     date="2025"
   />
   
@@ -24,12 +36,19 @@ import drewImage from '../assets/drew.jpg';
   />
   
   <Post 
+    content="When I'm not coding, you can find me skiing, reading, or playing Dungeons & Dragons. Skiing is my favorite outdoor activity - there's nothing like hitting the slopes on a fresh powder day."
+    image={skiingImage.src}
+    imageAlt="Drew skiing"
+    date="2025"
+  />
+  
+  <Post 
     content="Currently working as a Full Stack Developer at Campus Storage Solutions, where I get to build and maintain web applications that help students with their storage needs."
     date="2025"
   />
   
   <Post 
-    content="When I'm not coding, you can find me hiking with my dogs, working on personal projects like this self-hosted website, or exploring new technologies."
+    content="I love combining my technical skills with my creative interests. Whether it's coding, playing D&D, or reading fantasy novels, I'm always looking for ways to solve problems and tell stories."
     date="2025"
   />
 </TwitterLayout> 

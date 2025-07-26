@@ -36,7 +36,7 @@ const { content, image, imageAlt, date, author } = Astro.props;
           <img 
             src={image} 
             alt={imageAlt || "Post image"} 
-            class="rounded-lg w-full h-auto max-h-96 object-cover"
+            class="rounded-lg w-full h-auto max-h-[600px] object-contain"
           />
         </div>
       )}

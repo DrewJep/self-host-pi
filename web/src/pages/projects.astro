@@ -1,33 +1,56 @@
 ---
 import TwitterLayout from '../layouts/TwitterLayout.astro';
 import Post from '../components/Post.astro';
+import hackWinImage from '../assets/hack_win.JPG';
 // Projects page for Drew Jepsen
 ---
 
 <TwitterLayout title="Projects" description="My favorite projects and open source work">
-  <Post 
-    content="Minesweeper (Spring 2021) - Final project for CS211. Built a complete Minesweeper game in Java with GUI, implementing game logic, user interface, and file I/O. Features include custom difficulty levels and game state persistence."
-    date="Spring 2021"
-  />
-  
-  <Post 
-    content="Evolutionary Robotics Homework (CS5060) - Developed evolutionary algorithms for robot control and behavior optimization. Used Jupyter Notebooks for data analysis and visualization of robot performance across generations."
-    date="2024"
-  />
-  
-  <Post 
-    content="Hackathon 2024 - Participated in a competitive hackathon, building a web application under time constraints. Gained experience in rapid prototyping, team collaboration, and presenting technical solutions."
-    date="2024"
-  />
-  
   <Post 
     content="Self-Hosted Raspberry Pi Website (Current) - This website! Learning how to self-host on a Raspberry Pi 4, including nginx configuration, SSL certificates, and deployment automation. Built with Astro and Tailwind CSS."
     date="2025"
   />
   
   <Post 
-    content="CS211 Final Project - Advanced data analysis and visualization project using Jupyter Notebooks. Implemented statistical analysis, machine learning algorithms, and interactive data visualizations."
-    date="2021"
+    content="Embedded IoT System for Acoustic Precipitation Phase Partitioning - Constructed a data collection deployment using a custom Arduino paired with a Raspberry Pi 4. Various forms of data are collected on the Arduino, passed to the Pi, which sends the data package to a REST API on a remote server. Led the prototyping of the hardware enclosure and data collection and categorization processes. Publication currently in review process."
+    date="May 2024 - May 2025"
+  />
+  
+  <Post 
+    content="SUBREDDIT Communities' Dynamic and Conflict Propagation - Investigated interaction on Reddit using various web scraping techniques. Constructed and analyzed a dataset consisting of years' worth of archived posts using Python libraries. Publication: https://ieeexplore.ieee.org/document/10847271"
+    date="January 2024 - June 2024"
+  />
+  
+  <Post 
+    content="Hackathon Winner 2024 - Won first place in a competitive hackathon by creating a comprehensive listing website similar to Craigslist or Facebook Marketplace. Built a full-stack application with user authentication, login system, advanced filtering capabilities, and support for multiple listing types including one-time purchases, rentals, and subleasing. Demonstrated rapid prototyping, team collaboration, and technical problem-solving under time constraints."
+    image={hackWinImage.src}
+    imageAlt="Hackathon win"
+    date="2024"
+  />
+  
+  <Post 
+    content="Minesweeper (Spring 2021) - One of my first solo projects at college and final project for my intro to java class. Built a complete Minesweeper game in Java with GUI, implementing game logic, user interface, and file I/O. Features include custom difficulty levels and game state persistence."
+    date="Spring 2021"
+  />
+
+  <Post 
+    content="Netflix Popularity Prediction Model - Created various prediction models using Python's scikit-learn to predict which factors of a Netflix show or movie lead to its popularity. Conducted vast amounts of data cleaning and feature-importance analysis, then constructed random forest models and linear models."
+    date="January 2023 - May 2023"
+  />
+  
+  <Post 
+    content="Language Learning Focused Song Recommender - Created a web-based application utilizing the Spotify API to generate custom playlists based on user language preferences. Implemented a Flask-run server, HTML and JavaScript frontend, and a Python backend for API interaction. Won second place at UVM's 2022 Computer Science Fair in the Advanced Programs Category."
+    date="September 2022 - December 2022"
+  />
+  
+  <Post 
+    content="TikTok Analytics Platform - Work with ML engineer to create infrastructure for analyzing TikTok account interaction data, creating indices of biggest supporters and detractors by applying sentiment analysis and tracking interactions across posts. Developed a simple frontend in Python using Flink, demonstrating the proof-of-concept."
+    date="June 2022 - August 2022"
+  />
+  
+  <Post 
+    content="Raspberry Pi Guitar Pedal - Co-developed a real-time guitar effects pedal with over 20 custom-made sound effect modules. Utilized a Raspberry Pi 4 running custom Python scripts and the Pyo Library for sound input and output."
+    date="September 2021 - December 2021"
   />
   
   <Post 
