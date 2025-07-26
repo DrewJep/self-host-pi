@@ -2,6 +2,8 @@
 import TwitterLayout from '../layouts/TwitterLayout.astro';
 import Post from '../components/Post.astro';
 import hackWinImage from '../assets/hack_win.JPG';
+import cheeseImage1 from '../assets/cheesebox1.jpg';
+import cheeseImage2 from '../assets/cheesebox2.jpg';
 // Projects page for Drew Jepsen
 ---
 
@@ -34,6 +36,20 @@ import hackWinImage from '../assets/hack_win.JPG';
   />
 
   <Post 
+    content="Raspberry Pi Guitar Pedal - Co-developed a real-time guitar effects pedal with over 20 custom-made sound effect modules. Utilized a Raspberry Pi 4 running custom Python scripts and the Pyo Library for sound input and output."
+    image={cheeseImage1.src}
+    imageAlt="Cheesebox 1"
+    date="September 2021 - December 2021"
+  />
+
+  <Post 
+    content="another image of the CHEESEBOX Guitar Pedal"
+    image={cheeseImage2.src}
+    imageAlt="Cheesebox 2"
+    date="September 2021 - December 2021"
+  />
+
+  <Post 
     content="Netflix Popularity Prediction Model - Created various prediction models using Python's scikit-learn to predict which factors of a Netflix show or movie lead to its popularity. Conducted vast amounts of data cleaning and feature-importance analysis, then constructed random forest models and linear models."
     date="January 2023 - May 2023"
   />
@@ -46,11 +62,6 @@ import hackWinImage from '../assets/hack_win.JPG';
   <Post 
     content="TikTok Analytics Platform - Work with ML engineer to create infrastructure for analyzing TikTok account interaction data, creating indices of biggest supporters and detractors by applying sentiment analysis and tracking interactions across posts. Developed a simple frontend in Python using Flink, demonstrating the proof-of-concept."
     date="June 2022 - August 2022"
-  />
-  
-  <Post 
-    content="Raspberry Pi Guitar Pedal - Co-developed a real-time guitar effects pedal with over 20 custom-made sound effect modules. Utilized a Raspberry Pi 4 running custom Python scripts and the Pyo Library for sound input and output."
-    date="September 2021 - December 2021"
   />
   
   <Post 
