@@ -5,55 +5,142 @@ import drewImage from '../assets/drew.jpg';
 ---
 
 <Layout>
-  <div class="min-h-screen flex flex-col items-center justify-start bg-white p-8">
-    <div class="w-full flex flex-col md:flex-row items-start justify-between max-w-4xl">
-      <div class="flex-1">
-        <h1 class="text-5xl font-bold mb-4 text-blue-900">(Christopher) Drew Jepsen</h1>
-        <section class="mb-8">
-          <h2 class="text-2xl font-semibold mb-2 text-blue-700">About Me</h2>
-          <p class="text-lg text-gray-700 mb-2">
-            Hi! I'm Drew Jepsen. Welcome to my personal site. Here you'll find a quick overview of my background, education, work, and projects. Click any section to learn more!
-          </p>
-          <a href="/about" class="text-blue-600 hover:underline">Read more</a>
-        </section>
-        <section class="mb-8">
-          <h2 class="text-2xl font-semibold mb-2 text-blue-700">Education</h2>
-          <p class="text-lg text-gray-700 mb-2">
-            B.S. in Computer Science, University of Vermont, 2024
-          </p>
-          <p class="text-lg text-gray-700 mb-2">
-            M.S. in Computer Science, University of Vermont, 2025
-          </p>
-          <a href="/education" class="text-blue-600 hover:underline">See details</a>
-        </section>
-        <section class="mb-8">
-          <h2 class="text-2xl font-semibold mb-2 text-blue-700">Work</h2>
-          <p class="text-lg text-gray-700 mb-2">
-            Full Stack Developer at Campus Storage Solutions
-          </p>
-          <a href="/work" class="text-blue-600 hover:underline">See my experience</a>
-        </section>
-        <section class="mb-8">
-          <h2 class="text-2xl font-semibold mb-2 text-blue-700">Projects</h2>
-          <p class="text-lg text-gray-700 mb-2">
-            Check out some of my favorite projects and open source work.
-          </p>
-          <a href="/projects" class="text-blue-600 hover:underline">View projects</a>
-        </section>
-        <section class="mb-8">
-          <h2 class="text-2xl font-semibold mb-2 text-blue-700">Connect</h2>
-          <p class="text-lg text-gray-700 mb-2">
-            Let's connect! Feel free to reach out on LinkedIn or check out my projects on GitHub. You can also download my resume for more details about my experience.
-          </p>
-          <div class="flex space-x-4">
-            <a href="https://www.linkedin.com/in/cdrewjep" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Connect on LinkedIn</a>
-            <a href="https://github.com/DrewJep" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">View on GitHub</a>
-            <a href="/drew-resume-06-2025.pdf" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Download Resume</a>
-          </div>
-        </section>
+  <div class="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
+    <!-- Hero Section -->
+    <div class="max-w-6xl mx-auto px-6 py-16">
+      <div class="text-center mb-16">
+        <h1 class="text-6xl font-bold mb-6 text-blue-900">Drew Jepsen</h1>
+        <p class="text-xl text-blue-700 mb-4">Boston-based Full Stack Developer & Computer Science Graduate</p>
+        <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+          Passionate about IIoT, Embedded Systems, and Machine Learning. Recently completed my M.S. in Computer Science 
+          and enjoy modding and homebrewing retro consoles in my spare time.
+        </p>
       </div>
-      <div class="mt-8 md:mt-0 md:ml-8 flex-shrink-0 flex justify-center items-center w-full md:w-64">
-        <img src={drewImage.src} alt="Drew Jepsen" class="rounded-lg shadow-lg w-full max-w-xs h-auto object-cover" />
+
+      <!-- Main Content Grid -->
+      <div class="grid md:grid-cols-2 gap-8 mb-16">
+        <!-- About Section -->
+        <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow">
+          <h2 class="text-3xl font-bold mb-4 text-blue-900">About Me</h2>
+          <p class="text-gray-700 mb-4">
+            The 4th Christopher in my family (hence "Drew"), I've been programming since 17 and have a fascination with computers that started in childhood. 
+            When I'm not coding, you'll find me skiing, reading fantasy novels, or playing D&D with my three dogs keeping me company.
+          </p>
+          <a href="/about" class="inline-flex items-center text-blue-600 hover:text-blue-800 font-semibold">
+            Learn more about me
+            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Education Section -->
+        <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow">
+          <h2 class="text-3xl font-bold mb-4 text-blue-900">Education</h2>
+          <p class="text-gray-700 mb-4">
+            M.S & B.S. in Computer Science from UVM with minors in Statistics and Pure Mathematics. 
+            Research experience includes CIROH hydrology projects 
+            and published work on Reddit community dynamics.
+          </p>
+          <a href="/education" class="inline-flex items-center text-blue-600 hover:text-blue-800 font-semibold">
+            View academic journey
+            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Work Section -->
+        <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow">
+          <h2 class="text-3xl font-bold mb-4 text-blue-900">Work Experience</h2>
+          <p class="text-gray-700 mb-4">
+            Contract Software Engineer at Campus Storage Solutions, Graduate Teaching Assistant at UVM, 
+            and Production Support Specialist Intern at PTC. Experience spans full-stack development, 
+            teaching, web modernization projects, and fish mongering.
+          </p>
+          <a href="/work" class="inline-flex items-center text-blue-600 hover:text-blue-800 font-semibold">
+            See professional experience
+            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Projects Section -->
+        <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow">
+          <h2 class="text-3xl font-bold mb-4 text-blue-900">Projects</h2>
+          <p class="text-gray-700 mb-4">
+            From IoT precipitation monitoring systems to real-time guitar pedals, 
+            my projects showcase diverse technical skills. Recent work includes published research 
+            and award-winning applications.
+          </p>
+          <a href="/projects" class="inline-flex items-center text-blue-600 hover:text-blue-800 font-semibold">
+            Explore my projects
+            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Featured Highlights -->
+      <div class="bg-white rounded-xl shadow-lg p-8 mb-16">
+        <h2 class="text-3xl font-bold mb-6 text-blue-900 text-center">Featured Highlights</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="text-center">
+            <div class="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+              <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+            </div>
+            <h3 class="font-semibold text-lg mb-2">Hackathon Winner</h3>
+            <p class="text-gray-600">First place in 2024 hackathon for marketplace platform</p>
+          </div>
+          <div class="text-center">
+            <div class="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+              <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+              </svg>
+            </div>
+            <h3 class="font-semibold text-lg mb-2">Published Research</h3>
+            <p class="text-gray-600">IEEE publication on Reddit community dynamics</p>
+          </div>
+          <div class="text-center">
+            <div class="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+              <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
+              </svg>
+            </div>
+            <h3 class="font-semibold text-lg mb-2">IoT Innovation</h3>
+            <p class="text-gray-600">Acoustic precipitation monitoring system</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Connect Section -->
+      <div class="text-center">
+        <h2 class="text-3xl font-bold mb-6 text-blue-900">Let's Connect</h2>
+        <p class="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
+          I'm always interested in new opportunities, collaborations, and interesting conversations about technology and software development.
+        </p>
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href="https://www.linkedin.com/in/cdrewjep" target="_blank" rel="noopener noreferrer" 
+             class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors font-semibold">
+            Connect on LinkedIn
+          </a>
+          <a href="https://github.com/DrewJep" target="_blank" rel="noopener noreferrer" 
+             class="bg-gray-800 text-white px-6 py-3 rounded-lg hover:bg-gray-900 transition-colors font-semibold">
+            View on GitHub
+          </a>
+          <a href="mailto:drewjepsen13@gmail.com" 
+             class="bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition-colors font-semibold">
+            Send Email
+          </a>
+          <a href="/drew-resume-06-2025.pdf" target="_blank" rel="noopener noreferrer" 
+             class="bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-700 transition-colors font-semibold">
+            Download Resume
+          </a>
+        </div>
       </div>
     </div>
   </div>
