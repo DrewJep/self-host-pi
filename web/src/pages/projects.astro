@@ -4,6 +4,8 @@ import Post from '../components/Post.astro';
 import hackWinImage from '../assets/hack_win.JPG';
 import cheeseImage1 from '../assets/cheesebox1.jpg';
 import cheeseImage2 from '../assets/cheesebox2.jpg';
+import shmup1 from '../assets/shmup1.png';
+
 // Projects page for Drew Jepsen
 ---
 
@@ -14,8 +16,15 @@ import cheeseImage2 from '../assets/cheesebox2.jpg';
   />
   
   <Post 
-    content="Embedded IoT System for Acoustic Precipitation Phase Partitioning - Constructed a data collection deployment using a custom Arduino paired with a Raspberry Pi 4. Various forms of data are collected on the Arduino, passed to the Pi, which sends the data package to a REST API on a remote server. Led the prototyping of the hardware enclosure and data collection and categorization processes. Publication currently in review process."
+    content="Embedded IoT System for Acoustic Precipitation Phase Partitioning - Constructed a data collection deployment using a custom Arduino paired with a Raspberry Pi 4. Various forms of data are collected on the Arduino, passed to the Pi, which sends the data package to a REST API on a remote server. Led the prototyping of the hardware enclosure and data collection and categorization processes. Link to publication: https://ieeexplore.ieee.org/document/11175467."
     date="May 2024 - May 2025"
+  />
+
+  <Post
+    content='From Scratch 2D SHMUP Game - Developing an Isometric 2D shoot-em-up game using the Godot Engine and GDScript. Features include player movement, shooting mechanics, enemy AI, level design, and power-ups. Aiming to create an engaging gameplay experience with retro-inspired graphics and sound effects. Github Repo: https://github.com/DrewJep/shmup'
+    image={shmup1.src}
+    imageAlt="2D SHMUP Game"
+    date="In Development"
   />
   
   <Post 
@@ -27,7 +36,7 @@ import cheeseImage2 from '../assets/cheesebox2.jpg';
     content="Hackathon Winner 2024 - Won first place in a competitive hackathon by creating a comprehensive listing website similar to Craigslist or Facebook Marketplace. Built a full-stack application with user authentication, login system, advanced filtering capabilities, and support for multiple listing types including one-time purchases, rentals, and subleasing. Demonstrated rapid prototyping, team collaboration, and technical problem-solving under time constraints."
     image={hackWinImage.src}
     imageAlt="Hackathon win"
-    date="2024"
+    date="2025"
   />
   
   <Post 
