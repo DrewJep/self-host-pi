@@ -1,0 +1,79 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { initVoteForm } from '../scripts/voteForm';
+---
+
+<Layout>
+  <div class="bg-white rounded-3xl shadow-sm border border-gray-200 p-6">
+    <div id="vote-loading" class="text-gray-600">Loading the current movie selection...</div>
+
+    <div id="vote-empty" class="hidden rounded-xl border border-yellow-200 bg-yellow-50 p-4 text-yellow-900">No movie has been selected for tonight yet. Check back after the admin rolls a movie.</div>
+
+    <div id="vote-card" class="hidden space-y-6">
+      <div class="rounded-2xl border border-gray-200 bg-slate-50 p-5">
+        <h2 class="text-2xl font-semibold text-gray-900" id="selected-title"></h2>
+        <p class="text-gray-600" id="selected-director"></p>
+        <p class="text-sm text-gray-500">Rate the movie based on what you just watched.</p>
+      </div>
+
+      <form id="vote-form" class="space-y-4">
+        <div>
+          <label class="block text-sm font-medium text-gray-700">Your name</label>
+          <input id="reviewer-name" type="text" placeholder="Optional" class="mt-1 block w-full rounded-xl border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500" />
+        </div>
+
+        <div class="grid gap-4 sm:grid-cols-2">
+          <div>
+            <label class="block text-sm font-medium text-gray-700">Story</label>
+            <select id="score-story" class="mt-1 block w-full rounded-xl border-gray-300 bg-white shadow-sm focus:border-blue-500 focus:ring-blue-500">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-gray-700">Characters</label>
+            <select id="score-characters" class="mt-1 block w-full rounded-xl border-gray-300 bg-white shadow-sm focus:border-blue-500 focus:ring-blue-500">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-gray-700">Cinematography</label>
+            <select id="score-cinematography" class="mt-1 block w-full rounded-xl border-gray-300 bg-white shadow-sm focus:border-blue-500 focus:ring-blue-500">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-gray-700">Overall</label>
+            <select id="score-overall" class="mt-1 block w-full rounded-xl border-gray-300 bg-white shadow-sm focus:border-blue-500 focus:ring-blue-500">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+        </div>
+
+        <button id="vote-button" type="submit" class="inline-flex items-center justify-center rounded-xl bg-blue-600 px-5 py-3 text-sm font-semibold text-white shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500">Submit Rating</button>
+      </form>
+
+      <div id="vote-message" class="rounded-xl p-4 hidden"></div>
+    </div>
+  </div>
+
+  <script>
+    import { initVoteForm } from '../scripts/voteForm';
+    initVoteForm();
+  </script>
+</Layout>

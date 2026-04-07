@@ -1,0 +1,44 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { initAdminControls } from '../scripts/adminControls';
+---
+
+<Layout>
+  <div class="space-y-6">
+    <section class="bg-white rounded-3xl shadow-sm border border-gray-200 p-6">
+      <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+        <div>
+          <h2 class="text-xl font-bold text-gray-900">Admin controls</h2>
+          <p class="text-gray-600">Roll tonight's movie, lock submissions, and view watched results.</p>
+        </div>
+        <div class="flex flex-col gap-3 sm:flex-row">
+          <button id="roll-button" class="rounded-xl bg-blue-600 px-5 py-3 text-sm font-semibold text-white hover:bg-blue-700">Roll Next Movie</button>
+          <button id="lock-button" class="rounded-xl bg-amber-500 px-5 py-3 text-sm font-semibold text-white hover:bg-amber-600"></button>
+          <button id="reset-button" class="rounded-xl bg-red-600 px-5 py-3 text-sm font-semibold text-white hover:bg-red-700">Reset Contest</button>
+        </div>
+      </div>
+      <p id="admin-status" class="mt-4 text-sm text-gray-700"></p>
+      <div id="admin-message" class="mt-4 rounded-xl p-4 hidden"></div>
+    </section>
+
+    <section class="bg-white rounded-3xl shadow-sm border border-gray-200 p-6">
+      <h3 class="text-lg font-semibold text-gray-900">Currently selected movie</h3>
+      <div id="selected-movie" class="mt-4 rounded-2xl border border-gray-200 bg-slate-50 p-5 text-gray-700"></div>
+    </section>
+
+    <section class="bg-white rounded-3xl shadow-sm border border-gray-200 p-6">
+      <h3 class="text-lg font-semibold text-gray-900">Pending submissions</h3>
+      <div id="pending-list" class="mt-4 space-y-3"></div>
+    </section>
+
+    <section class="bg-white rounded-3xl shadow-sm border border-gray-200 p-6">
+      <h3 class="text-lg font-semibold text-gray-900">Watched movie results</h3>
+      <div id="results-list" class="mt-4 space-y-4"></div>
+    </section>
+  </div>
+
+  <script>
+    import { initAdminControls } from '../scripts/adminControls';
+    initAdminControls();
+  </script>
+</Layout>

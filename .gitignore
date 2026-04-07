@@ -1,1 +1,27 @@
 .DS_Store
+
+# Python
+db/__pycache__
+api/__pycache__
+.venv/
+
+# Astro build output
+web/dist/
+web/.astro/
+
+# Dependencies
+web/node_modules/
+
+# Logs
+web/npm-debug.log*
+web/yarn-debug.log*
+web/yarn-error.log*
+web/pnpm-debug.log*
+
+# Environment variables
+.env
+.env.production
+
+# IDE folders
+.idea/
+.vscode/
